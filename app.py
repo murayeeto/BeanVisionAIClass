@@ -112,11 +112,12 @@ print("Creating Gradio interface...")
 iface = gr.Interface(
     fn=classify_bean,
     inputs=gr.Image(type="pil"),
-    outputs=gr.Label(num_top_classes=3),
+    outputs=gr.Label(num_top_classes=3, label="Classification Results"),
     title=title,
     description=description,
     examples=examples,
-    allow_flagging="never"
+    allow_flagging="never",
+    theme="default"
 )
 
 # Launch the app
