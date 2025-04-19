@@ -1,0 +1,2 @@
+# BeanVisionAIClass
+Ai class project
